@@ -72,7 +72,7 @@ class WatchDetailAV(APIView):
         except WatchList.DoesNotExist:
             return Response({'Error':'Not found'},status=status.HTTP_404_NOT_FOUND)
         
-        serializer = WatchList(movie)
+        serializer = WatchListSerializer(movie)
         return Response(serializer.data)
         
     def put(self,request,pk):
