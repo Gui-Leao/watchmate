@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "watchlist_app",
     "rest_framework",
     "rest_framework.authtoken",
+    "django_filters",
 ]
 
 MIDDLEWARE = [
@@ -150,7 +151,8 @@ REST_FRAMEWORK = {
         'review-create':'2/day',
         'review-list':'10/day',
         'review-detail':'2/day'
-    }
+    },
+    
 }
 
 
